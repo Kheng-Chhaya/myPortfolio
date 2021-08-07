@@ -162,7 +162,11 @@
                     <h3 class="project-wrapper__text-title">Traffic Shapping Implementation</h3>
                     <div>
                       <p class="mb-4">
-                        In light of recent challenges brought about by COVID-19, the need for remote work, meetings, training, and learning has increased exponentially. A secure and optimized network would certainly allow users to do their best, despite being unable to work from their usual offices. I was recently asked if the addition of an open-sourced firewall, such as pfSense, would introduce network latency, reduce network speeds and affect productivity. A concern brought up was the issue of Bufferbloat, which is briefly defined as high latency within the network when multiple types of network traffic [for example bulk traffic (think upload/download)] hinders time-sensitive traffic (think gaming, Zoom/Skype, etc) [1]. This phenomenon is usually caused by a router lacking the ability to execute Smart Queue Management (SQM) for the network traffic. After some experiments and research, I would like to share that using pfSense’s Traffic Shaper Limiters could help optimize networks and address potential Bufferbloat issues. I also further discuss some settings that were tweaked and tested (vis-à-vis what is usually outlined) that ensure conformance to cybersecurity best practices while network performance is optimized.
+                        Traffic shaping (also known as packet shaping) is bandwidth management
+                         technique that delays the flow of certain types of network packets in order to
+                          ensure network performance for higher priority applications. Traffic shaping essentially 
+                          limits the amount of bandwidth that can be consumed by certain types of applications. It is primarily
+                           used to ensure a high quality of service for business-related network traffic.
                       </p>
                     </div>
                     <a target="" class="cta-btn cta-btn--hero" href="#!">
